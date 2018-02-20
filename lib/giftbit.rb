@@ -71,6 +71,10 @@ class Giftbit
     def get_links(campaign_id)
       get "links/#{campaign_id}"
     end
+
+    def brands
+      get 'brands'
+    end
   end
 
   extend Methods
