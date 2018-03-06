@@ -5,7 +5,7 @@ require 'rest-client'
 class Giftbit
   module Base
     def self.extended(klass)
-      klass.send :cattr_accessor, :endpoint, :auth, :auths
+      klass.send :cattr_accessor, :endpoint, :auth, :auths, :app_name
       klass.endpoint = 'https://testbedapp.giftbit.com/papi/v1/'
     end
 
