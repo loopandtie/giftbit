@@ -39,7 +39,7 @@ class Giftbit
     end
 
     def regions(params = {})
-      get 'marketplace/regions', params: params
+      get 'regions', params: params
     end
 
     def vendors(params = {})
