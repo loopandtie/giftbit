@@ -72,8 +72,8 @@ class Giftbit
       get "links/#{campaign_id}"
     end
 
-    def brands
-      get 'brands'
+    def brands(params = {})
+      get 'brands', params: params
     end
   end
 
